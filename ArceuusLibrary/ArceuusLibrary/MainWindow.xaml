@@ -1,0 +1,942 @@
+﻿<Window x:Class="ArceuusLibrary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArceuusLibrary"
+        mc:Ignorable="d"
+        Title="Arceuus House Library Shelf Finder" Height="1080" Width="1200" ResizeMode="NoResize">
+    <Grid Name="mainGrid">
+        <!--Background rectangles-->
+        <Rectangle Fill="#FF171717" HorizontalAlignment="Left" Height="1051" Stroke="Black" VerticalAlignment="Top" Width="1194"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="137,941,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="57,941,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="57,841,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="57,641,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="147,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="167,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="57,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="342,581,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="462,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="422,581,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="594,521,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="604,632,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="684,561,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="594,961,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="664,861,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="794,791,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="80" Margin="884,711,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="794,701,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="80" Margin="794,711,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="954,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="1074,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="1004,611,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="1044,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="1074,521,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="58,66,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="128,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="128,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="128,456,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="38,386,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="248,296,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="80" Margin="338,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="248,206,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="80" Margin="248,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="358,306,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="477,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="60" Margin="397,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="537,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="447,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="477,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="517,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="547,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="547,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="487,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="377,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="417,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="377,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="437,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="447,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="477,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="477,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="507,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="517,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="517,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="507,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="437,156,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="437,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="457,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="507,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="547,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="547,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="427,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="387,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="377,156,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="358,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="368,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="368,236,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="328,326,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="298,326,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="228,326,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="218,316,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="218,266,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="218,236,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="218,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="228,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="278,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="308,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="208,156,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="208,106,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="158,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="168,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="88,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="98,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="168,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="208,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="208,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="168,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="158,66,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="108,56,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="108,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="168,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="198,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="208,346,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="208,416,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="178,416,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="138,376,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="88,376,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="88,446,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="138,426,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="148,416,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="168,486,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="98,486,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="68,486,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,446,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,486,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,376,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="38,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="88,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="138,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="1004,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="1004,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="1064,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="1094,541,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="1094,651,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="1034,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="964,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="30" Margin="924,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="924,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="924,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="954,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="864,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="794,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="794,821,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="864,821,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="90" Margin="914,701,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="764,771,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="764,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="764,821,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="914,821,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="914,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="924,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="764,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="30" Margin="754,871,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="754,931,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="734,941,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="694,931,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="694,941,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="754,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="724,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="684,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="654,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="614,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,951,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="584,911,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="654,921,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="664,911,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,861,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,831,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="624,831,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="694,831,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="754,831,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="694,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="634,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="624,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="644,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="754,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="714,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="30" Margin="754,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="30" Margin="754,541,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="724,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="654,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="614,511,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="584,541,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,621,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,651,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,681,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,711,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="37,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="87,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="97,711,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="117,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="167,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,641,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="187,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="147,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,561,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="207,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="177,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="137,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="107,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="67,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="37,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,561,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="97,651,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="97,681,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="312,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="312,631,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="312,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="312,561,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="322,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="352,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="382,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="382,581,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="382,611,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="422,641,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="422,681,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="422,711,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="412,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="362,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="442,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="492,721,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="502,711,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="502,681,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="502,651,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="502,621,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="502,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="502,561,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="492,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="462,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="422,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="177,891,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="20" Margin="217,891,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,861,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="167,811,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="87,811,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="37,811,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,821,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,851,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,881,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,911,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,941,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="27,971,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="37,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="67,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="97,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="97,951,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="97,911,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="137,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="177,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="207,981,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,971,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="217,931,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="20" Margin="427,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="445,26,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="432,26,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="434,26,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="434,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="434,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="434,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="39" Margin="348,257,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="366,266,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="353,266,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="355,266,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="355,271,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="355,276,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="355,281,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="20" Margin="58,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="76,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="63,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="65,126,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="65,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="65,136,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="65,141,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="39" Margin="178,357,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="196,366,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="183,366,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="185,366,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="185,371,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="185,376,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="185,381,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="912,740,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="899,740,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="901,740,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="901,745,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="901,750,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="901,755,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="30" Margin="624,542,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="642,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="629,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,551,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,556,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,561,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,566,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="9" Margin="634,572,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="39" Margin="944,582,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="962,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="949,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="951,591,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="951,596,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="951,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="951,606,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD000000" HorizontalAlignment="Left" Height="40" Margin="624,851,0,0" Stroke="Black" VerticalAlignment="Top" Width="40" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="642,860,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="629,860,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,860,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,865,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,870,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="631,875,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="115,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="102,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,601,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,606,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,611,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,616,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="115,861,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="102,861,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,861,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,866,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,871,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="104,876,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="370,656,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="21" Margin="357,656,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="359,656,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="359,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="359,666,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="359,671,0,0" Stroke="Black" VerticalAlignment="Top" Width="11" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="20" Margin="742,886,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="20" Margin="730,886,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="732,886,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="732,891,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="732,896,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="732,901,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="20" Margin="970,527,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="20" Margin="958,527,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="960,527,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="960,532,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="960,537,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="960,542,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="20" Margin="650,629,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="20" Margin="638,629,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="640,629,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="640,634,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="640,639,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#DD4A1900" HorizontalAlignment="Left" Height="2" Margin="640,644,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+        <Rectangle Fill="#665E5D" HorizontalAlignment="Left" Height="10" Margin="178,166,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" StrokeThickness="0"/>
+
+        <!--Bottom floor, SW-->
+        <Button x:Name="shelf1" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="217,871,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf2" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="217,881,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf3" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="207,891,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf4" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="197,891,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf5" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="187,891,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf6" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="167,891,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf7" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="157,891,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf8" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="157,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf9" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="167,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf10" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="187,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf11" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="197,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf12" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="207,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf13" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="217,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf14" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="217,951,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf15" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="217,961,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf16" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="197,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf17" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="187,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf18" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="167,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf19" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="157,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf20" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="147,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf21" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="107,971,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf22" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="107,961,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf23" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="107,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf24" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="107,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf25" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="107,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf26" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf27" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="97,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf28" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf29" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,961,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf30" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="97,971,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf31" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="87,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf32" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="77,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf33" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="57,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf34" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="47,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf35" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,961,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf36" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="27,951,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf37" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf38" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="27,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf39" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,871,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf40" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,861,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf41" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="27,841,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf42" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf43" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="47,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf44" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="57,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf45" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="67,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf46" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="77,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf47" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="127,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf48" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="137,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf49" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="147,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf50" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="157,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Bottom floor, NW-->
+        <Button x:Name="shelf51" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="157,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf52" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="147,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf53" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="137,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf54" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="127,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf55" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="107,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf56" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="107,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf57" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="107,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf58" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="107,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf59" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf60" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="97,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf61" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf62" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf63" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="77,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf64" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="67,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf65" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="57,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf66" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="47,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf67" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf68" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf69" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="27,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf70" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf71" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="27,611,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf72" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf73" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="27,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf74" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="27,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf75" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="47,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf76" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="57,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf77" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="77,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf78" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="87,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf79" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="97,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf80" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="147,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf81" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="157,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf82" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="167,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf83" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="187,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf84" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="197,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf85" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="217,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf86" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="217,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf87" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="217,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf88" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="207,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf89" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="197,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf90" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="177,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf91" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="167,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf92" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="157,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf93" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="157,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf94" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="167,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf95" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="177,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf96" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="197,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf97" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="207,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf98" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="217,651,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf99" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="217,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Bottom floor, NE-->
+        <Button x:Name="shelf100" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="312,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf101" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="312,651,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf102" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="312,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf103" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="312,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf104" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="312,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf105" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="312,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf106" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="332,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf107" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="342,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf108" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="362,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf109" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="372,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf110" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="382,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf111" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="382,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf112" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="382,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf113" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="382,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf114" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="392,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf115" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="392,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf116" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="392,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf117" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="392,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf118" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="432,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf119" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="442,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf120" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="452,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf121" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="472,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf122" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="482,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf123" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="502,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf124" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="502,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf125" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="502,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf126" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="502,611,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf127" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="502,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf128" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="502,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf129" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="502,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf130" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="502,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf131" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="482,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf132" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="472,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf133" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="462,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf134" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="452,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf135" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="432,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf136" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="432,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf137" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="432,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf138" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="432,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf139" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="432,651,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf140" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="422,651,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf141" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="422,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf142" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="422,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf143" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="422,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf144" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="422,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf145" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="402,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf146" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="392,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf147" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="382,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf148" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="372,721,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Middle floor, NW-->
+        <Button x:Name="shelf149" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,621,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf150" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,611,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf151" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="594,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf152" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="604,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf153" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="614,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf154" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="634,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf155" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="624,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf156" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="614,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf157" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf158" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf159" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="584,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf160" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf161" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="624,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf162" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="634,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf163" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="644,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf164" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="684,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf165" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="694,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf166" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="704,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf167" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf168" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf169" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="754,521,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf170" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,531,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf171" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf172" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf173" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="754,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf174" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf175" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="754,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf176" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,651,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf177" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="744,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf178" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="734,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf179" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf180" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="684,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf181" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="674,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf182" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="664,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf183" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="624,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf184" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="614,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf185" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="604,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf186" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="594,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf187" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,621,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf188" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="714,611,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf189" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf190" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="714,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf191" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf192" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf193" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="714,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf194" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf195" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="724,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf196" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf197" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="724,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf198" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="724,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf199" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="724,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf200" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf201" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="724,611,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf202" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,621,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Middle floor, SW-->
+        <Button x:Name="shelf203" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf204" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf205" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="594,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf206" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="604,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf207" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="614,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf208" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="624,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf209" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="634,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf210" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="644,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf211" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="654,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf212" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="654,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf213" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="664,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf214" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="664,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf215" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="664,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf216" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="654,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf217" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="644,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf218" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="634,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf219" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="624,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf220" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="614,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf221" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="604,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf222" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="594,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf223" Style="{StaticResource BasicShelf}" IsEnabled="False" Content="" HorizontalAlignment="Left" Margin="584,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf224" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,891,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf225" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="584,881,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf226" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="584,871,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf227" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="594,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf228" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="604,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf229" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="614,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf230" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="654,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf231" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="664,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf232" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="674,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf233" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="684,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf234" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf235" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="734,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf236" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="744,831,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf237" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,841,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf238" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="754,851,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf239" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,861,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf240" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,901,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf241" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,911,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf242" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="754,921,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf243" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="744,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf244" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="734,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf245" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,931,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf246" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="704,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf247" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="714,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf248" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="724,941,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf249" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,951,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf250" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="754,961,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf251" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="754,971,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf252" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="714,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf253" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="704,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf254" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="694,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf255" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="674,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf256" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="664,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf257" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="644,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf258" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="634,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf259" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="624,981,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Middle floor, center-->
+        <Button x:Name="shelf260" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf261" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,801,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf262" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,791,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf263" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,781,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf264" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,761,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf265" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,751,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf266" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,741,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf267" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,731,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf268" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,711,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf269" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,701,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf270" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf271" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="764,681,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf272" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="774,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf273" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="784,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf274" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="824,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf275" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="834,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf276" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="844,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf277" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="854,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf278" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="894,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf279" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="904,671,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf280" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="914,681,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf281" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="914,691,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf282" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="914,791,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf283" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="914,801,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf284" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="914,811,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf285" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="904,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf286" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="894,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf287" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="854,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf288" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="844,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf289" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="834,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf290" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="824,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf291" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="784,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf292" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="774,821,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Middle floor, NE-->
+        <Button x:Name="shelf293" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="924,651,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf294" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="924,641,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf295" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="924,631,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf296" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="924,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf297" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="924,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf298" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="924,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf299" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="924,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf300" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="924,541,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf301" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="924,531,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf302" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="924,521,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf303" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="964,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf304" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="974,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf305" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="984,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf306" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="994,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf307" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1004,521,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf308" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1004,531,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf309" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1004,541,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf310" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1014,541,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf311" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1014,531,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf312" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1014,521,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf313" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1024,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf314" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1034,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf315" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1044,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf316" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1054,511,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf317" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1094,551,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf318" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1094,561,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf319" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1094,571,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf320" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1094,581,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf321" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1094,591,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf322" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1094,601,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf323" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1094,611,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf324" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1094,621,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf325" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="1084,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf326" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1074,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf327" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1064,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf328" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="1024,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf329" Style="{StaticResource BasicShelf}" IsEnabled="False" Content="" HorizontalAlignment="Left" Margin="1014,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf330" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="1004,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf331" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="994,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf332" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="954,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf333" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="944,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf334" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="934,661,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Top floor, SW-->
+        <Button x:Name="shelf335" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,476,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf336" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,466,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf337" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="38,456,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf338" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,366,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf339" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,356,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf340" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="38,346,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf341" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="48,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf342" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="58,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf343" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="68,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf344" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="78,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf345" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf346" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="158,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf347" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="178,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf348" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="188,336,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf349" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,356,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf350" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="208,366,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf351" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,376,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf352" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,386,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf353" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="208,396,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf354" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,406,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf355" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="198,416,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf356" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="188,416,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf357" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="168,416,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf358" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="158,421,0,0" VerticalAlignment="Top" Width="10" Height="5"/>
+        <Button x:Name="shelf359" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,406,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf360" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,396,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf361" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,386,0,0" VerticalAlignment="Top" Width="4" Height="10"/>
+        <Button x:Name="shelf362" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="138,386,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf363" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="143,396,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf364" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="138,406,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf365" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="143,416,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf366" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,426,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf367" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="158,426,0,0" VerticalAlignment="Top" Width="20" Height="4"/>
+        <Button x:Name="shelf368" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="168,431,0,0" VerticalAlignment="Top" Width="10" Height="5"/>
+        <Button x:Name="shelf369" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="188,426,0,0" VerticalAlignment="Top" Width="10" Height="4"/>
+        <Button x:Name="shelf370" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="198,426,0,0" VerticalAlignment="Top" Width="10" Height="4"/>
+        <Button x:Name="shelf371" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="213,436,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf372" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,446,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf373" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="208,456,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf374" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,466,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf375" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,476,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf376" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="198,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf377" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="188,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf378" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="178,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf379" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="88,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf380" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="78,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf381" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="58,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf382" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="48,486,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf383" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="88,436,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf384" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="88,426,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf385" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="88,416,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf386" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="88,406,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf387" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="88,396,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf388" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="88,386,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf389" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="98,386,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf390" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="98,396,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf391" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="98,406,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf392" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="98,416,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf393" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="98,426,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf394" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="98,436,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Top floor, NW-->
+        <Button x:Name="shelf395" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="78,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf396" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="68,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf397" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="58,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf398" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="48,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf399" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,156,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf400" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="38,146,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf401" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,136,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf402" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="38,46,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf403" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="38,36,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf404" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="38,26,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf405" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="48,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf406" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="58,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf407" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="68,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf408" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="78,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf409" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="88,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf410" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="178,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf411" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="188,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf412" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="198,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf413" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="208,26,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf414" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,36,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf415" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,46,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf416" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf417" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="208,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf418" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="208,136,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf419" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="208,146,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf420" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="198,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf421" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="188,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf422" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="168,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf423" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="158,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf424" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf425" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="118,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf426" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="128,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf427" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="138,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf428" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="148,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf429" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="158,106,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf430" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="158,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf431" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="158,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf432" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="158,76,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf433" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,66,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf434" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="138,66,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf435" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="128,66,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf436" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="118,66,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf437" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="118,56,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf438" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="128,56,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf439" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="138,56,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf440" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="148,56,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf441" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="158,56,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf442" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="168,66,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf443" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="168,76,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf444" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="168,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf445" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="168,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf446" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="168,106,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf447" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="168,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf448" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="158,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf449" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="148,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf450" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="138,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf451" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="128,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf452" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="118,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Top floor, NE-->
+        <Button x:Name="shelf453" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="377,146,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf454" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="377,136,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf455" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="377,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf456" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="377,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf457" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="377,46,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf458" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="377,36,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf459" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="377,26,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf460" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="387,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf461" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="397,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf462" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="407,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf463" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="497,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf464" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="507,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf465" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="527,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf466" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="537,16,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf467" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="547,26,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf468" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="547,36,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf469" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="547,46,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf470" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="547,136,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf471" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="547,146,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf472" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="547,156,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf473" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="537,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf474" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="527,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf475" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="517,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf476" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="497,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf477" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="487,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf478" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="477,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf479" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="447,156,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf480" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="447,146,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf481" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="447,136,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf482" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="447,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf483" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="447,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf484" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="447,106,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf485" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="457,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf486" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="467,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf487" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="487,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf488" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="497,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf489" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="507,106,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf490" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="507,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf491" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="507,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf492" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="517,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf493" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="517,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf494" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="517,106,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf495" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="517,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf496" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="507,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf497" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="497,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf498" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="487,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf499" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="467,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf500" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="457,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf501" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="447,86,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf502" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="437,96,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf503" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="437,106,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf504" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="437,116,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf505" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="437,126,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf506" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="437,136,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf507" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="437,146,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf508" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="417,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf509" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="407,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf510" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="397,166,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Top floor, center-->
+        <Button x:Name="shelf511" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="218,306,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf512" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="218,296,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf513" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="218,286,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf514" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="218,276,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf515" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="218,226,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf516" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="218,216,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf517" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="218,206,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf518" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="218,196,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf519" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="238,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf520" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="248,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf521" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="258,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf522" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="268,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf523" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="318,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf524" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="328,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf525" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="338,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf526" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="348,176,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf527" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="368,196,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf528" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="368,206,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf529" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="368,216,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf530" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="368,226,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf531" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="348,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf532" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="338,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf533" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="288,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf534" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="278,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf535" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="268,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf536" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="258,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf537" Style="{StaticResource BasicShelf}" IsEnabled="False"  Content="" HorizontalAlignment="Left" Margin="248,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+        <Button x:Name="shelf538" Style="{StaticResource BasicShelf}" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="238,326,0,0" VerticalAlignment="Top" Width="10" Height="10"/>
+
+        <!--Extra shelves on top floor SW-->
+        <Button x:Name="shelf539" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="138,416,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf540" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="138,396,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf541" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="153,386,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf542" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="153,406,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf543" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="158,416,0,0" VerticalAlignment="Top" Width="10" Height="4"/>
+        <Button x:Name="shelf544" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="208,436,0,0" VerticalAlignment="Top" Width="5" Height="10"/>
+        <Button x:Name="shelf545" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="198,431,0,0" VerticalAlignment="Top" Width="10" Height="5"/>
+        <Button x:Name="shelf546" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="188,431,0,0" VerticalAlignment="Top" Width="10" Height="5"/>
+        <Button x:Name="shelf547" Style="{StaticResource BasicShelf}" IsEnabled="True"  Content="" HorizontalAlignment="Left" Margin="158,431,0,0" VerticalAlignment="Top" Width="10" Height="5"/>
+
+        <!-- Other stuff -->
+        <Button x:Name="resetButton" Content="Reset" HorizontalAlignment="Left" Margin="842,226,0,0" Click="Reset_Click" VerticalAlignment="Top" Width="93" Height="30"/>
+        <Button x:Name="exportButton" Content="Export jpg" HorizontalAlignment="Left" Margin="842,276,0,0" Click="export_Click" VerticalAlignment="Top" Width="93" Height="30"/>
+        <TextBlock x:Name="titleText" HorizontalAlignment="Left" Margin="957,0,0,0" TextWrapping="Wrap" Text="Arceuus House Library Shelf finder" VerticalAlignment="Top" Height="70" Width="227" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="versionText" HorizontalAlignment="Left" Margin="1045,66,0,0" TextAlignment="Right" TextWrapping="Wrap" Text="Version 1.0.1" VerticalAlignment="Top" Height="20" Width="108" FontSize="12" Foreground="White"/>
+        <TextBlock x:Name="thirdFloorText" HorizontalAlignment="Left" Margin="244,236,0,0" TextWrapping="Wrap" Text="3rd floor" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="114" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="secondFloorText" HorizontalAlignment="Left" Margin="790,735,0,0" TextWrapping="Wrap" Text="2nd floor" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="114" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="firstFloorText" HorizontalAlignment="Left" Margin="204,743,0,0" TextWrapping="Wrap" Text="1st floor" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="114" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks1" HorizontalAlignment="Left" Margin="47,996,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="160" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks2" HorizontalAlignment="Left" Margin="38,743,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="150" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks3" HorizontalAlignment="Left" Margin="338,741,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="154" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks4" HorizontalAlignment="Left" Margin="594,685,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="160" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks5" HorizontalAlignment="Left" Margin="584,996,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="160" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks6" HorizontalAlignment="Left" Margin="774,837,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="138" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks7" HorizontalAlignment="Left" Margin="944,681,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="150" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks8" HorizontalAlignment="Left" Margin="47,501,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="160" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks9" HorizontalAlignment="Left" Margin="38,181,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="159" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks10" HorizontalAlignment="Left" Margin="392,186,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="155" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="roomBooks11" HorizontalAlignment="Left" Margin="228,341,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="36" Width="134" FontSize="24" Foreground="White"/>
+        <TextBlock x:Name="lastReseted" HorizontalAlignment="Left" Margin="944,230,0,0" TextWrapping="Wrap" TextAlignment="Left" VerticalAlignment="Top" Height="20" Width="240" FontSize="16" Foreground="White"/>
+        <TextBlock x:Name="lastExported" HorizontalAlignment="Left" Margin="940,281,0,0" TextWrapping="Wrap" TextAlignment="Left" VerticalAlignment="Top" Height="20" Width="244" FontSize="16" Foreground="White"/>
+    </Grid>
+</Window>

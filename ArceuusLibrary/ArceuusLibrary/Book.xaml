@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="ArceuusLibrary.Book"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ArceuusLibrary"
+             mc:Ignorable="d" Height="45" Width="80">
+    <Grid Margin="0,0,0,0">
+        <Rectangle Fill="#00000000" HorizontalAlignment="Left" Height="45" Stroke="Black" VerticalAlignment="Top" Width="80" StrokeThickness="0"/>
+        <TextBlock x:Name="bookName" FontSize="10" HorizontalAlignment="Left" Margin="0,32,0,0" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Text="bookName" TextAlignment="Center" VerticalAlignment="Top" Width="80">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="White" BlurRadius="0" ShadowDepth="0" Direction="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock x:Name="bookNumber" FontSize="15" HorizontalAlignment="Left" Margin="3,7,0,0" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Text="N/A" TextAlignment="Center" VerticalAlignment="Top" Width="30" Height="20">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="White" BlurRadius="0" ShadowDepth="0" Direction="0"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <Image x:Name="bookIcon" HorizontalAlignment="Left" Height="32" Margin="38,0,0,0" VerticalAlignment="Top" Width="32"/>
+
+    </Grid>
+</UserControl>

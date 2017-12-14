@@ -1,0 +1,28 @@
+﻿<Window x:Class="ArceuusLibrary.BookPrompt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArceuusLibrary"
+        mc:Ignorable="d"
+        Title="Which book did you find?" Height="450" Width="330" ResizeMode="NoResize">
+    <Grid>
+        <local:Book x:Name="book1" Margin="65,10,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book2" Margin="169,10,0,0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <local:Book x:Name="book3" Margin="15,80,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book4" Margin="117,80,0,0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <local:Book x:Name="book5" Margin="219,80,0,0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <local:Book x:Name="book6" Margin="15,148,0,0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <local:Book x:Name="book7" Margin="117,148,0,0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <local:Book x:Name="book8" Margin="219,148,0,0" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <local:Book x:Name="book9" Margin="15,219,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book10" Margin="117,219,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book11" Margin="219,219,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book12" Margin="15,287,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book13" Margin="117,287,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book14" Margin="219,287,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book15" Margin="15,356,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book16" Margin="117,356,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <local:Book x:Name="book17" Margin="219,356,0,0" Cursor="Hand" VerticalAlignment="Top" HorizontalAlignment="Left" />
+    </Grid>
+</Window>
